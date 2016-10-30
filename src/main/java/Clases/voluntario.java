@@ -5,10 +5,54 @@
  */
 package Clases;
 
+import java.util.Date;
+
 /**
  *
  * @author isaac
  */
 public class voluntario {
-    
+    private String participanteID;
+    private Enum TipoVoluntario;
+    private Date FechaInicio;
+    private String Codigo;
+
+    public voluntario(String participanteID, Enum tipoVoluntario, Date fechaInicio, String codigo) {
+        this.participanteID = participanteID;
+        TipoVoluntario = tipoVoluntario;
+        FechaInicio = fechaInicio;
+        Codigo = codigo;
+    }
+
+    public String getParticipanteID() {
+        return participanteID;
+    }
+
+    public void setParticipanteID(String participanteID) {
+        this.participanteID = participanteID;
+    }
+
+    public Enum getTipoVoluntario() {
+        return TipoVoluntario;
+    }
+
+    public void setTipoVoluntario(Enum tipoVoluntario) {
+        TipoVoluntario = tipoVoluntario;
+    }
+
+    public Date getFechaInicio() {
+        return FechaInicio;
+    }
+
+    public void setFechaInicio(Date fechaInicio) {
+        FechaInicio = fechaInicio;
+    }
+
+    public String getCodigo() {
+        return Codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        Codigo = codigo;
+    }
 }

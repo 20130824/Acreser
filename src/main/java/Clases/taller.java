@@ -10,5 +10,38 @@ package Clases;
  * @author isaac
  */
 public class taller {
+    private String Nombre;
+    private String Descripcion;
+    private String Codigo;
+
+    public taller(String nombre, String descripcion, String codigo) {
+        this.Nombre = nombre;
+        this.Descripcion = descripcion;
+        this.Codigo = codigo;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
+    }
+
+    public String getDescripcion() {
+        return Descripcion;
+    }
+
+    public void setDescripcion(String Descripcion) {
+        this.Descripcion = Descripcion;
+    }
+
+    public String getCodigo() {
+        return Codigo;
+    }
+
+    public void setCodigo(String Codigo) {
+        this.Codigo = Codigo;
+    }
     
 }
